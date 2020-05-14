@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Day 3</title>
+</head>
+		<style type="text/css">
+			.hot{
+
+				color: red;
+			}
+			.nature {
+				color:green;
+			}
+
+		</style>
+
+
+
+
+<body>
+	<p id="demo"></p>
+
+		<ul>
+			<li class="nature">Item 1</li>
+			<li class="hot">Item 2</li>
+			<li class="hot">Item 3</li>
+			<li>Item 4</li>
+		</ul>
+
+		<button onclick="myFunction()">Call my Function</button>
+		<p id="demo1"></p>
+
+		<script type="text/javascript">
+			document.getElementById('demo').innerHTML = "Hello World";
+			document.querySelector('li.hot').innerHTML = "affected item";
+			document.getElementsByClassName('nature')[0].innerHTML = "Nature class impiemented";
+			document.getElementsByTagName("li")[2].innerHTML = "Selection by tag name";
+			document.getElementsByTagName("li")[3].setAttribute("class","nature");
+			document.getElementsByTagName("li")[2].className = "nature";
+			
+
+		function myFunction(){
+
+			document.getElementById("demo1").innerHTML = "Hello World";
+		}
+
+
+		</script>
+
+
+
+
+
+
+</body>
+</html>
